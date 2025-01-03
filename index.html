@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Side Project</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
     <header>
-        <h1>The Animals in my life</h1>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#lg">LG</a></li>
-                <li><a href="#nunu">Nunu</a></li>
-                <li><a href="#tigger">Tigger</a></li>
-                <li><a href="#nix">Nix</a></li>
-                <li><a href="#charlie">Charlie</a></li>
-            </ul>
+      <div class="w-full">
+        <h1 class="text-white bg-purple-900 text-center text-4xl py-4">
+          The Animals in my life
+        </h1>
+        <nav class="bg-purple-500">
+          <ul class="flex justify-around text-white">
+            <li><a href="#lg">LG</a></li>
+            <li><a href="#nunu">Nunu</a></li>
+            <li><a href="#tigger">Tigger</a></li>
+            <li><a href="#nix">Nix</a></li>
+            <li><a href="#charlie">Charlie</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main id="main">
-        <div class="grid">
-            <h2 class="pet-title" id="lg">LG</h2>
-                 <img class="pet-img" id="lg-img" src="lg.jpeg"/>
-                 <ul class="animal-info" id="lg-info">
-                    <li>A.K.A LG Palgy</li>
-                    <li>African Grey</li>
-                    <li>Born 1997</li>
-                    <li>Loves to laugh</li>
-                </ul>
-            <h2 class="pet-title" id="nunu" id="nunu">Nunu</h2>
-                <img class="pet-img" id="nunu-img" src="nunu.jpeg"/>
-                <ul class="animal-info" id="nunu-info">
-                    <li>A.K.A LG Palgy</li>
-                    <li>African Grey</li>
-                    <li>Born 1997</li>
-                    <li>Loves to laugh</li>
-                </ul>
-            <h2 class="pet-title" id="tigger">Tigger</h2>
-                <img class="pet-img" id="tigger-img" src="tigger.jpeg"/>
-                <ul class="animal-info" id="tigger-info">
-                    <li>A.K.A LG Palgy</li>
-                    <li>African Grey</li>
-                    <li>Born 1997</li>
-                    <li>Loves to laugh</li>
-                </ul>
-            <h2 class="pet-title" id="nix">Nix</h2>
-                <img class="pet-img" id="nix-img" src="nix.jpeg"/>
-                <ul class="animal-info" id="nix-info">
-                    <li>A.K.A LG Palgy</li>
-                    <li>African Grey</li>
-                    <li>Born 1997</li>
-                    <li>Loves to laugh</li>
-                </ul>
-            <h2 class="pet-title" id="charlie">Charlie</h2>
-                <img class="pet-img" id="charlie-img" src="charlie.jpeg"/>
-                <ul class="animal-info" id="charlie-info">
-                    <li>A.K.A LG Palgy</li>
-                    <li>African Grey</li>
-                    <li>Born 1997</li>
-                    <li>Loves to laugh</li>
-                </ul>
-        </div>    
+    <main class=" mx-20">
+      <di class="container">
+        <div class="flex flex-col justify-center text-center mt-10">
+          <h1 class="text-5xl" id="lg">LG</h1>
+          <div class="grid grid-cols-2 gap-10">
+            <img class="object-cover" id="lg-img" src="lg.jpeg" />
+            <ul class="text-start" id="lg-info">
+              <li>A.K.A LG Palgy</li>
+              <li>African Grey</li>
+              <li>Born 1997</li>
+              <li>Loves to laugh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center text-center mt-10">
+          <h1 class="text-5xl" id="Nunu">Nunu</h1>
+          <div class="flex justify-center gap-10">
+            <img class="max-w-sm" id="nunu-img" src="nunu.jpeg" />
+            <ul class="text-start" id="lg-info">
+              <li>A.K.A LG Palgy</li>
+              <li>African Grey</li>
+              <li>Born 1997</li>
+              <li>Loves to laugh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center text-center mt-10">
+          <h1 class="text-5xl" id="tigger">Tigger</h1>
+          <div class="flex justify-center gap-10">
+            <img class="max-w-sm" id="tigger-img" src="tigger.jpeg" />
+            <ul class="text-start" id="lg-info">
+              <li>A.K.A LG Palgy</li>
+              <li>African Grey</li>
+              <li>Born 1997</li>
+              <li>Loves to laugh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center text-center mt-10">
+          <h1 class="text-5xl" id="Nix">Nix</h1>
+          <div class="flex justify-center gap-10">
+            <img class="max-w-sm" id="nix-img" src="nix.jpeg" />
+            <ul class="text-start" id="lg-info">
+              <li>A.K.A LG Palgy</li>
+              <li>African Grey</li>
+              <li>Born 1997</li>
+              <li>Loves to laugh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center text-center mt-10">
+          <h1 class="text-5xl" id="charlie">Charlie</h1>
+          <div class="flex justify-center gap-10">
+            <img class="max-w-sm" id="charlie-img" src="charlie.jpeg" />
+            <ul class="text-start" id="lg-info">
+              <li>A.K.A LG Palgy</li>
+              <li>African Grey</li>
+              <li>Born 1997</li>
+              <li>Loves to laugh</li>
+            </ul>
+          </div>
+        </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
